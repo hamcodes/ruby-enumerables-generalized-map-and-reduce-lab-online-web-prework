@@ -1,4 +1,4 @@
-def map(s)
+def my_own_map
   new = []
   i = 0
   while i < s.length
