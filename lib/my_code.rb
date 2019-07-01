@@ -1,4 +1,4 @@
-def map_to_negativize(source_array)
+def my_own_map(source_array)
     new = []	
   i = 0	
   while i < source_array.length do	
