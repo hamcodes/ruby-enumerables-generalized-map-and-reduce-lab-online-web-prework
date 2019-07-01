@@ -1,4 +1,9 @@
-def my_own_map(element1,element2)
-  map(#{element1} and #{element2})
+def map(s)
+  new = []
+  i = 0
+  while i < s.length
+    new.push(yield(s[i]))
+    i += 1
+  end
+  new
 end
-  my_own_map([1, 2, 3, -9]){|n| n * -1}
