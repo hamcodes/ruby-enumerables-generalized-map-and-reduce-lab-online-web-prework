@@ -1,9 +1,9 @@
-def my_own_map(source_array)
-    new = []	
-  i = 0	
-  while i < source_array.length do	
-    new.push( source_array[i] * -1 )	
-    i += 1	
-  end	
-  return new	
+def map(s)
+  new = []
+  i = 0
+  while i < s.length
+    new.push(yield(s[i]))
+    i += 1
+  end
+  new
 end
